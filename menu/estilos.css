@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del Cuerpo */
+body {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(238, 174, 202);
+    background: rgb(174, 230, 238);
+    background: linear-gradient(90deg, rgba(174, 230, 238, 1) 0%, rgb(221, 219, 110) 44%, rgba(99, 157, 224, 1) 100%);
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-borroso-degradado-vintage-suave-color-pastel-que-usa-como-sala-estudio-presentacion-productos-pancarta_1258-71085.jpg?w=900&t=st=1716650532~exp=1716651132~hmac=66a862ef997e840d89858aad59f88095d95c8f2ae260b5f583ace6ffdac63573'),
+                      url('https://img.freepik.com/foto-gratis/pared-estudio-degradado-amarillo-oro-lujo-abstracto-bien-uso-como-fondo-diseno-banner-presentacion-producto_1258-63554.jpg?t=st=1716653220~exp=1716656820~hmac=8fc0e70602163a5294c4baffecebdee61617b2e8c3cffe4821658c68ac994ef8&w=900'),
+                      url('https://img.freepik.com/foto-gratis/marron-beige-crema-claro-lujo-abstracto-como-fondo-modelo-textura-seda-algodon_1258-71591.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716163200&semt=ais_user');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Estilos de la Tarjeta */
+.card {
+    margin-bottom: 30px;
+    border: none;
+}
+
+/* Estilos del Texto */
+h2.mb-4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de la Caja */
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    background: rgb(238, 221, 174);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ac9c69;
+    padding: 20px;
+    width: 250px;
+    outline: none;
+    color: rgb(20, 20, 20);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box h1 {
+    color: rgb(214, 135, 45);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #f8981b;
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #ac9c69;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(202, 90, 38);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: rgb(214, 135, 45);
+}
+
+.forgot {
+    text-decoration: underline;
+}
+
+/* Estilos para los círculos animados */
+.contexto {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+}
+
+.contexto h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.circulos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circulos li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animar 25s linear infinite;
+    bottom: -150px;
+}
+
+.circulos li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circulos li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circulos li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circulos li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circulos li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circulos li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circulos li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circulos li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circulos li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circulos li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animar {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
